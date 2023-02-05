@@ -175,8 +175,8 @@ class ForecastingTool extends React.Component {
         let today = new Date();
         var fortnightAway = new Date(Date.now() + 12096e5);
         const postData = {
-            'startDate': today.getFullYear()+'/'+today.getMonth()+'/'+today.getDate(),
-            'endDate': fortnightAway.getFullYear()+'/'+fortnightAway.getMonth()+'/'+fortnightAway.getDate(),
+            'startDate': today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate(),
+            'endDate': fortnightAway.getFullYear()+'-'+(fortnightAway.getMonth()+1)+'-'+fortnightAway.getDate(),
             'location': 'Munich'
         };  
         fetch('http://localhost:8081/forecasting-weather-service/v1/weather-forecasts', {
@@ -198,6 +198,7 @@ class ForecastingTool extends React.Component {
         .catch(error => {
         console.log(error);
         });
+        
         fetch('http://localhost:8081/sales-forecast-service/v1/sales-forecasts', {
             method: 'POST',
             headers: {
@@ -307,7 +308,7 @@ class ForecastingTool extends React.Component {
                     {
                         this.state.showAlerts && 
                         <MaterialTable
-                        title="Weather Forecasting Information"
+                        title="Weather Forecasting Alerts"
                         options={{
                             search: false,
                             paging: false

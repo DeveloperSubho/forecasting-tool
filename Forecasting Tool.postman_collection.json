@@ -91,7 +91,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"location\": \"Berlin\",\r\n    \"startDate\": \"2023-02-05\",\r\n    \"endDate\": \"2023-02-07\"\r\n}",
+					"raw": "{\r\n    \"location\": \"Hamburg\",\r\n    \"startDate\": \"2023-02-05\",\r\n    \"endDate\": \"2023-02-07\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
