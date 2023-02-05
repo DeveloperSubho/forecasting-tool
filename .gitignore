@@ -3,3 +3,4 @@ node_modules
 .mvn
 mvnw
 mvnw.cmd
+forecasting-tool-service/.env
