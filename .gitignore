@@ -4,3 +4,4 @@ node_modules
 mvnw
 mvnw.cmd
 forecasting-tool-service/.env
+target/
