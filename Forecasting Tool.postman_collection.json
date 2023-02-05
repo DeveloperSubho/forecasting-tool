@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "59e3bfac-b018-4b28-a750-b16e74cce097",
+		"name": "Forecasting Tool",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Forecasts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/sales-forecast-service/v1/all-forecasts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"sales-forecast-service",
+						"v1",
+						"all-forecasts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Location based Forecasts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/sales-forecast-service/v1/location-based-forecasts?location=Hamburg",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"sales-forecast-service",
+						"v1",
+						"location-based-forecasts"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "Hamburg"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Date based Forecasts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/sales-forecast-service/v1/date-based-forecasts?startDate=2023-01-23&endDate=2023-01-25",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"sales-forecast-service",
+						"v1",
+						"date-based-forecasts"
+					],
+					"query": [
+						{
+							"key": "startDate",
+							"value": "2023-01-23"
+						},
+						{
+							"key": "endDate",
+							"value": "2023-01-25"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Weather forecasts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"location\": \"Berlin\",\r\n    \"startDate\": \"2023-02-05\",\r\n    \"endDate\": \"2023-02-07\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/forecasting-weather-service/v1/weather-forecasts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"forecasting-weather-service",
+						"v1",
+						"weather-forecasts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sales forecasts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"location\": \"Hamburg\",\r\n    \"startDate\": \"2023-02-05\",\r\n    \"endDate\": \"2023-02-07\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/sales-forecast-service/v1/sales-forecasts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"sales-forecast-service",
+						"v1",
+						"sales-forecasts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

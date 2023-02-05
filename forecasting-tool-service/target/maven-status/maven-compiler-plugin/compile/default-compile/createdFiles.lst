@@ -1,0 +1,12 @@
+com\mvp\forecasting\tool\service\controller\SalesForecastToolController.class
+com\mvp\forecasting\tool\service\repository\ForecastRepository.class
+com\mvp\forecasting\tool\service\service\SalesForecastService.class
+com\mvp\forecasting\tool\service\ForecastingToolServiceApplication.class
+com\mvp\forecasting\tool\service\model\SalesForecastRequest.class
+com\mvp\forecasting\tool\service\controller\WeatherForecastController.class
+com\mvp\forecasting\tool\service\service\impl\SalesForecastServiceImpl.class
+com\mvp\forecasting\tool\service\model\Forecasts.class
+com\mvp\forecasting\tool\service\model\WeatherForecastRequest.class
+com\mvp\forecasting\tool\service\service\impl\WeatherForecastServiceImpl.class
+com\mvp\forecasting\tool\service\service\WeatherForecastService.class
+com\mvp\forecasting\tool\service\model\WeatherForecast.class
