@@ -1,6 +1,6 @@
 package com.mvp.forecasting.tool.service.service;
 
-import com.mvp.forecasting.tool.service.model.Forecasts;
+import com.mvp.forecasting.tool.service.entity.Forecasts;
 import com.mvp.forecasting.tool.service.model.SalesForecastRequest;
 
 import java.text.ParseException;

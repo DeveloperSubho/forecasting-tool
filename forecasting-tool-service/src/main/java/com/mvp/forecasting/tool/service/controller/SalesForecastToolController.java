@@ -1,6 +1,7 @@
 package com.mvp.forecasting.tool.service.controller;
 
-import com.mvp.forecasting.tool.service.model.Forecasts;
+import com.google.gson.Gson;
+import com.mvp.forecasting.tool.service.entity.Forecasts;
 import com.mvp.forecasting.tool.service.model.SalesForecastRequest;
 import com.mvp.forecasting.tool.service.service.SalesForecastService;
 import org.json.JSONArray;
@@ -75,7 +76,7 @@ public class SalesForecastToolController {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Internal issue");
         }
         logger.info("=== Fetched weather forecast data ===");
-        return ResponseEntity.status(HttpStatus.OK).body(new JSONArray(weatherForecastResult).toString());
+        return ResponseEntity.status(HttpStatus.OK).body(new Gson().toJson(weatherForecastResult).toString());
     }
 
 }

@@ -7,9 +7,7 @@ import java.time.Instant;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.List;
 
-import com.mvp.forecasting.tool.service.model.WeatherForecast;
 import com.mvp.forecasting.tool.service.model.WeatherForecastRequest;
 import com.mvp.forecasting.tool.service.service.WeatherForecastService;
 import org.apache.http.HttpEntity;
@@ -30,10 +28,13 @@ public class WeatherForecastServiceImpl implements WeatherForecastService {
 
     @Value("${weather.api_key}")
     private String weather_api_key;
+
+    @Value("${weather.url}")
+    private String weather_url;
     @Override
     public String timelineRequestHttpClient(WeatherForecastRequest weatherForecastRequest) throws Exception {
         // set up the end point
-        String apiEndPoint = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/";
+        String apiEndPoint = weather_url;
 
         String location = weatherForecastRequest.getLocation();
         String startDate = weatherForecastRequest.getStartDate();
