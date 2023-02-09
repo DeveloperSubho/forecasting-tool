@@ -1,17 +1,13 @@
 package com.mvp.forecasting.tool.service.controller;
 
-import com.mvp.forecasting.tool.service.model.Forecasts;
 import com.mvp.forecasting.tool.service.model.WeatherForecastRequest;
 import com.mvp.forecasting.tool.service.service.WeatherForecastService;
-import org.json.JSONArray;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 /**
  * This controller is for fetching weather forecast for a particular timeline

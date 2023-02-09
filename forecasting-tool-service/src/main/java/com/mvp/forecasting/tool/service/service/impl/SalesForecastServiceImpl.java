@@ -1,6 +1,6 @@
 package com.mvp.forecasting.tool.service.service.impl;
 
-import com.mvp.forecasting.tool.service.model.Forecasts;
+import com.mvp.forecasting.tool.service.entity.Forecasts;
 import com.mvp.forecasting.tool.service.model.SalesForecastRequest;
 import com.mvp.forecasting.tool.service.repository.ForecastRepository;
 import com.mvp.forecasting.tool.service.service.SalesForecastService;

@@ -1,6 +1,6 @@
 package com.mvp.forecasting.tool.service.repository;
 
-import com.mvp.forecasting.tool.service.model.Forecasts;
+import com.mvp.forecasting.tool.service.entity.Forecasts;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 
